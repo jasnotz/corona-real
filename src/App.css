@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	margin: 0;
+}
+
+body {
+	background-color: #191f2c;
+	margin-left: 340px;
+	margin-right: 150px;
+}
+
+.app {
+	display: flex;
+	justify-content: space-evenly;
+	background: #191f2c;
+	padding: 20px;
+}
+
+.app__dropdown {
+	background-color: #191f2c;
+	color: white;
+	visibility: hidden; /*나라 선택페이지 숨기기 */
+}
+
+.app__bar {
+	margin: 0;
+	position: relative !important;
+	margin-top: 5px;
+}
+
+.app__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+.app .MuiPaper-elevation1 {
+	background-color: #272b38;
+}
+
+.app__header > h1 {
+	color: white;
+	font-size: 2.2rem;
+}
+
+.app__stats .MuiPaper-root {
+	background-color: #272b38;
+}
+
+#Real__app {
+	color: #606fe3;
+	font-size: 2.35rem;
+}
+
+#video-description {
+	margin: 0%;
+	color: #e0e0e0;
+	font-size: 15px;
+}
+
+#logotext {
+	cursor: pointer;
+	font-family: "Basic", sans-serif;
+	margin-left: 0px;
+	position: relative;
+	margin-right: 80px;
+	align-items: center;
+}
+
+#table-text {
+	color: whitesmoke;
+}
+
+#all-country {
+	font-family: "Noto Sans KR", sans-serif;
+	color: whitesmoke;
+}
+
+#dropdown__text {
+	color: whitesmoke;
+}
+
+.line__design {
+	margin-top: 20px;
+	padding-left: 140px;
+	padding-right: 120px;
+	margin-right: 10px;
+}
+
+.app__stats {
+	display: flex;
+	justify-content: space-between;
+	background: #191f2c;
+}
+
+.app__bottom {
+	margin-top: 30px;
+	margin-right: 10px;
+	padding: 1rem;
+	border-radius: 20px;
+	box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+#error-message {
+	margin-top: 25px;
+	margin-left: 170px;
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: gray;
+	font-weight: 20;
+	font-size: 17px;
+}
+
+#kr {
+	font-size: 25px;
+	font-family: "Basic", sans-serif;
+}
+
+#video__text {
+	color: whitesmoke;
+	font-weight: 400;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+#graph__title {
+	color: whitesmoke;
+	margin-top: 5px;
+}
+
+.graph__text {
+	margin-bottom: 50px;
+	margin-top: 29px;
+	color: whitesmoke;
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.app__left {
+	flex: 0.9;
+}
+
+.app__information > h3 {
+	color: #6a5d5d;
+	font-weight: 400;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+	margin-top: 1rem;
+}
+
+/* 사이드바 */
+.home,
+.reports,
+.products {
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}
+
+@media (max-width: 990px) {
+	/* 오른쪽 패널 최적화 */
+	.app {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1920px) {
+	/* 너비 1920 인 모니터 최적화 */
+	#logotext {
+		right: 2px;
+		position: relative;
+	}
+	#error-message {
+		position: relative;
+		right: 50px;
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 2560px) {
+	/* 너비 2560 인 와이드 모니터 최적화 */
+	#logotext {
+		right: 35px;
+		position: relative;
+	}
+	#error-message {
+		position: relative;
+		right: 50px;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	/* 아이폰 5 최적화 */
+	* {
+		position: relative;
+		justify-content: center;
+	}
+	body {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		width: 420px;
+	}
+
+	#logotext {
+		position: relative;
+		left: -5px;
+		right: 2px;
+	}
+
+	.app__stats {
+		width: 450px;
+		height: 170px;
+		justify-content: space-between;
+		margin-left: 0px !important;
+		position: relative;
+		left: 9px;
+		right: 22px;
+		justify-content: center;
+		background: #191f2c;
+		box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+	}
+
+	.app__bottom {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		visibility: hidden;
+		width: 450px;
+		height: auto;
+	}
+
+	.video-width {
+		width: 50px;
+	}
+
+	.line__design {
+		margin-top: 20px;
+		width: 190px;
+		right: 5px;
+		left: 2px;
+		bottom: 10px;
+	}
+
+	.graph__text {
+		color: whitesmoke;
+		font-family: "Noto Sans KR", sans-serif;
+		font-weight: 300;
+		position: relative;
+		top: 2px;
+		left: -120px;
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	#video-description {
+		visibility: hidden;
+		position: relative;
+		z-index: 2 !important;
+		color: #e0e0e0;
+		font-size: 15px;
+		white-space: nowrap;
+	}
+
+	canvas.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		left: -120px;
+		height: 430px !important;
+		bottom: 10px;
+		width: 390px !important;
+	}
+
+	.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		height: 167px;
+		width: 335px;
+	}
+
+	.app__right {
+		margin-top: -700px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 30px;
+		left: 3px;
+		right: 5px;
+		width: 460px;
+		height: auto;
+	}
+
+	#error-message {
+		visibility: hidden;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+	/* 아이폰 6+, 7+, 8+ 최적화 */
+	* {
+		position: relative;
+		justify-content: center;
+	}
+	body {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+
+	#logotext {
+		position: relative;
+		left: -5px;
+		right: 2px;
+	}
+
+	.app__stats {
+		width: auto;
+		height: auto;
+		justify-content: space-between;
+		margin-left: 0px !important;
+		position: relative;
+		left: 9px;
+		right: 22px;
+		justify-content: center;
+		background: #191f2c;
+		box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+	}
+
+	.app__bottom {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		visibility: hidden;
+		width: 450px;
+		height: auto;
+	}
+
+	.video-width {
+		width: 50px;
+	}
+
+	.line__design {
+		margin-top: 20px;
+		width: 190px;
+		right: 5px;
+		left: 2px;
+		bottom: 10px;
+	}
+
+	.graph__text {
+		color: whitesmoke;
+		font-family: "Noto Sans KR", sans-serif;
+		font-weight: 300;
+		position: relative;
+		top: 2px;
+		left: -120px;
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	#video-description {
+		visibility: hidden;
+		position: relative;
+		z-index: 2 !important;
+		color: #e0e0e0;
+		font-size: 15px;
+		white-space: nowrap;
+	}
+
+	canvas.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		left: -120px;
+		height: 430px !important;
+		bottom: 10px;
+		width: 390px !important;
+	}
+
+	.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		height: 167px;
+		width: 335px;
+	}
+
+	.app__right {
+		margin-top: -700px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 30px;
+		left: 3px;
+		right: 5px;
+		width: 460px;
+		height: auto;
+	}
+
+	#error-message {
+		visibility:;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	/* 아이폰X 최적화 */
+	* {
+		position: relative;
+		justify-content: center;
+	}
+	body {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		width: 420px;
+	}
+
+	#logotext {
+		position: relative;
+		left: -5px;
+		right: 2px;
+	}
+
+	.app__stats {
+		width: 450px;
+		height: 170px;
+		justify-content: space-between;
+		margin-left: 0px !important;
+		position: relative;
+		left: 9px;
+		right: 22px;
+		justify-content: center;
+		background: #191f2c;
+		box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+	}
+
+	.app__bottom {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		visibility: hidden;
+		width: 450px;
+		height: auto;
+	}
+
+	.video-width {
+		width: 50px;
+	}
+
+	.line__design {
+		margin-top: 20px;
+		width: 190px;
+		right: 5px;
+		left: 2px;
+		bottom: 10px;
+	}
+
+	.graph__text {
+		color: whitesmoke;
+		font-family: "Noto Sans KR", sans-serif;
+		font-weight: 300;
+		position: relative;
+		top: 2px;
+		left: -120px;
+		font-size: 1.5rem;
+		white-space: nowrap;
+	}
+
+	#video-description {
+		visibility: hidden;
+		position: relative;
+		z-index: 2 !important;
+		color: #e0e0e0;
+		font-size: 15px;
+		white-space: nowrap;
+	}
+
+	canvas.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		left: -120px;
+		height: 430px !important;
+		bottom: 10px;
+		width: 390px !important;
+	}
+
+	.chartjs-render-monitor {
+		position: relative;
+		right: 120px;
+		display: block;
+		height: 167px;
+		width: 335px;
+	}
+
+	.app__right {
+		margin-top: -700px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 30px;
+		left: 3px;
+		right: 5px;
+		width: 460px;
+		height: auto;
+	}
+
+	#error-message {
+		visibility: hidden;
+	}
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 4) {
+	/* Galaxy S8, S8+, S9, S9+, S10, S10+ 최적화 */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4) {
+	/* Galaxy S6, S7, S7 Edge 최적화 */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 718px) and (-webkit-min-device-pixel-ratio: 2) {
+	/* Galaxy Note 10, 10+ 최적화 */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 4) {
+	/* Galaxy Note 8, 9 최적화 */
+}

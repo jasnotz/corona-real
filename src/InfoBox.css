@@ -1,0 +1,78 @@
+.infoBox {
+	flex: 1;
+	cursor: pointer;
+	background-color: #272b38;
+	margin-right: 10px;
+}
+
+.infoBox:not(:last-child) {
+	margin-right: 10px;
+	background-color: #272b38;
+}
+
+a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: #c0c0c0;
+}
+
+a:hover {
+	transition: 0.2s;
+	color: #828282;
+}
+
+.infoBox--selected {
+	border-top: 10px solid #5673eb;
+}
+
+.infoBox--red {
+	border-color: #c03556;
+}
+
+.infoBox__cases--green {
+	color: #5673eb !important;
+}
+
+#box-color .MuiTypography-colorTextSecondary {
+	color: white;
+	background-color: #272b38;
+}
+
+#box-color {
+	background-color: #272b38;
+}
+
+.infoBox__cases {
+	color: #d54e6d;
+	font-weight: 600;
+	background-color: #272b38;
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+	color: #6c757d;
+	font-weight: 700 !important;
+	font-size: 1rem !important;
+	margin-top: 15px !important;
+}
+/* 미디아 쿼리 */
+@media (max-width: 768px) {
+	.infoBox {
+		cursor: pointer;
+		position: relative;
+		left: 5px;
+		background-color: #272b38;
+	}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+	/* 아이폰X 최적화 */
+	#live__text {
+		visibility: hidden;
+	}
+
+	.infoBox__total {
+		margin-top: -30px !important;
+	}
+}
